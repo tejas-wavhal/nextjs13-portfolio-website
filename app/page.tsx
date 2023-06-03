@@ -3,21 +3,19 @@ import Contact from '@/components/client/Contact'
 import HeroSection from '@/components/server/HeroSection'
 import Portfolio from '@/components/server/Portfolio'
 import Services from '@/components/server/Services'
-import { Project } from '@/types'
 
-export default async function Home() {
-  const res = await fetch(`${process.env.URL}/api/projects`,
-    {
-      method: "GET",
-    }
-  );
-  const projects: { success: boolean, projects: Project[] } = await res.json();
+
+
+
+
+export default async function page() {
 
   return (
     <main>
       <HeroSection />
       <About />
-      <Portfolio projects={projects} />
+      {/* @ts-expect-error Async Server Component */}
+      <Portfolio />
       <Services />
       <Contact />
     </main>

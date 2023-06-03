@@ -1,7 +1,25 @@
 import PortfolioCard from './PortfolioCard'
 import { Project } from '@/types'
 
-const Portfolio = ({ projects }: any) => {
+async function getData() {
+  const res = await fetch(`${process.env.URL}/api/projects`,
+    {
+      cache: 'no-store',
+      method: "GET",
+    }
+  );
+  if (!res.ok) {
+    throw new Error('Failed to fetch data');
+  }
+
+  return res.json();
+}
+
+
+
+const Portfolio = async () => {
+
+  const projects = await getData();
 
   // const res = await fetch(`${process.env.URL}/api/projects`,
   //   {
