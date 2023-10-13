@@ -10,7 +10,7 @@ const About = () => {
         <h2 className='text-center my-3 font-semibold text-2xl font-rubik'>Let me introduce Myself</h2>
         <div className='flex flex-col my-10 text-xl dark:bg-gray-500/30 bg-gray-500/10 font-base p-14 rounded-full space-y-5'>
           <p className='text-center text-gray-700 dark:text-gray-300'>I am Tejas Wavhal from Pune. I code Web Apps beautifully simple, and i love what i do.</p>
-          <p className='text-center text-gray-700 dark:text-gray-300'>I am a highly motivated individual who is eager to learn and grow as a NEXT JS & MERN stack developer. I am confident that my skills and passion for web development make me a strong candidate for full stack developer position.</p>
+          <p className='text-center text-gray-700 dark:text-gray-300'>I am a Highly Motivated individual who is eager to learn and grow as a Full Stack Developer with Modern Technologies like NEXT JS, MERN Stack. I am confident that my skills and passion for web development make me a strong candidate for full stack developer position.</p>
         </div>
         <h1 className='text-center text-4xl'>Skills</h1>
         <div className='flex justify-center items-center flex-wrap'>
