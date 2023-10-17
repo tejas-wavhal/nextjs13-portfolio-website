@@ -32,7 +32,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className='relative group mt-5 lg:mt-0'>
-                    <Image src={'/Profile.jpg'} alt="logo" height={300} width={300} className='rounded-full mx-0 lg:m-0 relative z-20 hover:scale-110 duration-700' />
+                    <Image src={'/profile.png'} alt="logo" height={300} width={300} className='rounded-full mx-0 lg:m-0 relative z-20 hover:scale-110 duration-700' />
                     <div className='hidden lg:block rounded-full top-3 right-3 h-[300px] w-[300px] bg-gradient-to-br from-purple-500 to-pink-600 absolute z-10 group-hover:scale-125 duration-500 delay-200' />
                     <div className='hidden lg:block rounded-full top-2 right-1 h-[300px] w-[300px] bg-gradient-to-br from-orange-600 to-yellow-300 absolute z-10 group-hover:-right-1 group-hover:top-3 group-hover:scale-125 duration-500 delay-300' />
                 </div>
